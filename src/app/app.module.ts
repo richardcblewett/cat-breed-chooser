@@ -18,7 +18,8 @@ import { TextblockComponent } from './home/textblock/textblock.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
