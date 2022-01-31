@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {PicturesService} from "./pictures.service";
-import {HttpClient} from "@angular/common/http";
+import { PicturesService } from './pictures.service';
+import {debounceTime, distinctUntilChanged, Subject} from "rxjs";
 
 
 @Component({
@@ -10,17 +10,28 @@ import {HttpClient} from "@angular/common/http";
 })
 export class SlideshowComponent implements OnInit {
 
-  getAllPictures(){
-    let allPictures:any = "http://localhost:9092/api/pictures";
-    //let allPictures:any = "https://https://cat-breed-chooser-backend.herokuapp.com/api/pictures";
-    return this.http.get(allPictures);
-  }
+  searchPictures = new Subject();
+  imageInput:any;
+  imageArray = [];
+  image = "jeff";
 
-  images = this.getAllPictures();
-
-  constructor(private http:HttpClient) { }
+  constructor(private picturesService:PicturesService) { }
 
   ngOnInit(): void {
+    this.imageInput = this.picturesService.getAllPictures();
+    // this.imageInput.forEach( (e:any) => {
+    //    console.log(e.toString())
+    // })
   }
-
+  // ngOnInit(): void {
+  //   this.searchPictures //
+  //     .pipe(debounceTime(1000),distinctUntilChanged())
+  //     .subscribe( () => {
+  //       this.picturesService.getAllPictures()
+  //         .subscribe( response => {
+  //           this.images = response;
+  //           console.log(this.images[0])
+  //         })
+  //     })
+  // }
 }

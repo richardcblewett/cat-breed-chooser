@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SlideshowComponent } from './home/slideshow/slideshow.component';
 import { TextblockComponent } from './home/textblock/textblock.component';
+import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { TextblockComponent } from './home/textblock/textblock.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
