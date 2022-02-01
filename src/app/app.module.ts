@@ -9,6 +9,7 @@ import { SlideshowComponent } from './home/slideshow/slideshow.component';
 import { TextblockComponent } from './home/textblock/textblock.component';
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import {HttpClientModule} from "@angular/common/http";
+import { BrowseComponent } from './browse/browse.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {HttpClientModule} from "@angular/common/http";
     HeaderComponent,
     HomeComponent,
     SlideshowComponent,
-    TextblockComponent
+    TextblockComponent,
+    BrowseComponent
   ],
   imports: [
     BrowserModule,
