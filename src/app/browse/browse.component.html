@@ -4,8 +4,9 @@
     Choose a Breed
   </button>
   <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <div *ngFor="let n of names; index as o">
-      <li><a ngbDropdownItem href="#">{{n[0]}}</a></li>
+    <div *ngFor="let n of names">
+      <li><a ngbDropdownItem routerLink="/id/{{n[1]}}">{{n[0]}}</a></li>
     </div>
   </ul>
 </div>
+<router-outlet></router-outlet>

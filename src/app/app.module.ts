@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -11,6 +10,8 @@ import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import {HttpClientModule} from "@angular/common/http";
 import { BrowseComponent } from './browse/browse.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { BreedInfoComponent } from './breed-info/breed-info.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -20,13 +21,15 @@ import { NavigationComponent } from './navigation/navigation.component';
     SlideshowComponent,
     TextblockComponent,
     BrowseComponent,
-    NavigationComponent
+    NavigationComponent,
+    BreedInfoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
