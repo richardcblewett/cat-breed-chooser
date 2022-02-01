@@ -1,12 +1,11 @@
-<p>Browse Works</p>
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-          aria-expanded="false">
+<div ngbDropdown class="dropdown">
+  <button ngbDropdownToggle class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false">
     Choose a Breed
   </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <div *ngFor="let n of names">
-      <li><a class="dropdown-item" href="#">{{names[n]}}</a></li>
+  <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <div *ngFor="let n of names; index as o">
+      <li><a ngbDropdownItem href="#">{{n}}</a></li>
     </div>
   </ul>
 </div>

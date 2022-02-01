@@ -2,5 +2,7 @@
   margin-left:auto;
   margin-top: -50px;
   justify-content: center;
+}
+button {
   background-color: red;
 }

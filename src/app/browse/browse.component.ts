@@ -18,6 +18,7 @@ export class BrowseComponent implements OnInit {
     this.dataBreedsService.getAllBreedsNames()
       .subscribe(response =>{
         this.names = response;
+        console.log(response)
       })
   }
 
