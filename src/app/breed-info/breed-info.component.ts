@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {BreedDataService} from "./breed-data.service";
+import {PicturesService} from "../home/slideshow/pictures.service";
 
 @Component({
   selector: 'app-breed-info',
@@ -10,7 +11,8 @@ import {BreedDataService} from "./breed-data.service";
 export class BreedInfoComponent implements OnInit {
 
   breed: any;
-  paramId:string = '';
+  paramId: string = '';
+  loaded: boolean = false;
 
   private setParamId() {
     this.route.paramMap.subscribe(params => {
@@ -18,15 +20,16 @@ export class BreedInfoComponent implements OnInit {
     });
   }
 
-  constructor(private route: ActivatedRoute, private breedDataService: BreedDataService) {
+  constructor(private route: ActivatedRoute, private breedDataService: BreedDataService, private picturesService:PicturesService) {
   }
 
   ngOnInit(): void {
     this.setParamId();
+    this.loaded = false;
     this.breedDataService.getBreedById(this.paramId)
       .subscribe(response => {
         this.breed = response;
-        console.log(response);
+        this.loaded = true;
       })
   }
 }
