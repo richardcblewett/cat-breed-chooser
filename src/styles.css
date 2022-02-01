@@ -3,3 +3,6 @@ body {
   background-color: black;
   color: white;
 }
+.carousel-indicators, .carousel-control-prev, .carousel-control-next {
+  visibility: hidden;
+}

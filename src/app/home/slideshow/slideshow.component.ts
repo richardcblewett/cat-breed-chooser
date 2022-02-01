@@ -11,17 +11,15 @@ import {debounceTime, distinctUntilChanged, Subject} from "rxjs";
 export class SlideshowComponent implements OnInit {
 
   searchPictures = new Subject();
-  imageInput: any;
-  imageArray = [];
-  image = "jeff";
+  images:any ;
 
   constructor(private picturesService: PicturesService) {
   }
   ngOnInit(): void {
     this.picturesService.getAllPictures()
           .subscribe(response => {
-            this.imageInput = response;
-            console.log(this.imageInput[0])
+            this.images = response;
+            console.log(this.images[0])
           })
       }
 }
