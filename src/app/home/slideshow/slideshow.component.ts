@@ -19,7 +19,6 @@ export class SlideshowComponent implements OnInit {
     this.picturesService.getAllPictures()
           .subscribe(response => {
             this.images = response;
-            console.log(this.images[0])
           })
       }
 }
