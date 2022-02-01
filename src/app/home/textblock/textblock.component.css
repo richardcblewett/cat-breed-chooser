@@ -1,5 +1,8 @@
-div {
+div, section {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+div {
+  width: 500px;
 }

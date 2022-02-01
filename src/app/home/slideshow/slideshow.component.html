@@ -1,0 +1,10 @@
+<!--  if there are images, then we can do the slideshow-->
+<ngb-carousel *ngIf="images" class="fixed-bottom">
+  <ng-template ngbSlide *ngFor="let i of images">
+    <div class="carousel slide justify-content-center row" data-ride="carousel">
+      <img [src]="i" [alt]="i">
+    </div>
+    <!--    no captions necessary-->
+    <div class="carousel-caption"></div>
+  </ng-template>
+</ngb-carousel>
