@@ -10,6 +10,7 @@ import { TextblockComponent } from './home/textblock/textblock.component';
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import {HttpClientModule} from "@angular/common/http";
 import { BrowseComponent } from './browse/browse.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BrowseComponent } from './browse/browse.component';
     HomeComponent,
     SlideshowComponent,
     TextblockComponent,
-    BrowseComponent
+    BrowseComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
