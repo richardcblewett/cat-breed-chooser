@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { PicturesService } from './pictures.service';
+import {Component, OnInit} from '@angular/core';
+import {PicturesService} from './pictures.service';
 import {debounceTime, distinctUntilChanged, Subject} from "rxjs";
 
 
@@ -11,27 +11,17 @@ import {debounceTime, distinctUntilChanged, Subject} from "rxjs";
 export class SlideshowComponent implements OnInit {
 
   searchPictures = new Subject();
-  imageInput:any;
+  imageInput: any;
   imageArray = [];
   image = "jeff";
 
-  constructor(private picturesService:PicturesService) { }
-
-  //ngOnInit(): void {
-    //this.imageInput = this.picturesService.getAllPictures();
-    // this.imageInput.forEach( (e:any) => {
-    //     console.log(e.toString())
-    // })
-  // }
-   ngOnInit(): void {
-    this.searchPictures //
-      .pipe(debounceTime(1000),distinctUntilChanged())
-      .subscribe( () => {
-        this.picturesService.getAllPictures()
-          .subscribe( response => {
+  constructor(private picturesService: PicturesService) {
+  }
+  ngOnInit(): void {
+    this.picturesService.getAllPictures()
+          .subscribe(response => {
             this.imageInput = response;
             console.log(this.imageInput[0])
           })
-      })
-  }
+      }
 }
