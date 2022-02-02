@@ -15,21 +15,23 @@ export class BreedInfoComponent implements OnInit {
   loaded: boolean = false;
 
   private setParamId() {
-    this.route.paramMap.subscribe(params => {
-      this.paramId = params.get("id") || '';
-    });
+
   }
 
   constructor(private route: ActivatedRoute, private breedDataService: BreedDataService, private picturesService:PicturesService) {
   }
 
-  ngOnInit(): void {
-    this.setParamId();
-    this.loaded = false;
-    this.breedDataService.getBreedById(this.paramId)
+  findBreed(param:any) {
+    this.breedDataService.getBreedById(param)
       .subscribe(response => {
         this.breed = response;
         this.loaded = true;
       })
+  }
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe(params => {
+      this.findBreed(params.get("id"));
+    });
   }
 }
