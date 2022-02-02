@@ -1,8 +1,7 @@
 img {
-  height: 300px;
+  height: 50vh;
 }
-
-.carousel{
+rousel{
   z-index: -1;
 }
 

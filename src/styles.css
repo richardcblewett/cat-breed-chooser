@@ -6,3 +6,8 @@ body {
 .carousel-indicators, .carousel-control-prev, .carousel-control-next {
   visibility: hidden;
 }
+
+.card {
+  border-color: red;
+  border-width: 5px;
+}
