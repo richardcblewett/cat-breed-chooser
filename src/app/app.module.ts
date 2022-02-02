@@ -12,6 +12,8 @@ import { BrowseComponent } from './browse/browse.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { BreedInfoComponent } from './breed-info/breed-info.component';
 import {FormsModule} from "@angular/forms";
+import { SearchComponent } from './search/search.component';
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import {FormsModule} from "@angular/forms";
     TextblockComponent,
     BrowseComponent,
     NavigationComponent,
-    BreedInfoComponent
+    BreedInfoComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +33,7 @@ import {FormsModule} from "@angular/forms";
     NgbModule,
     HttpClientModule,
     FormsModule,
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
