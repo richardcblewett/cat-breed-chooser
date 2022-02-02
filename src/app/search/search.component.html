@@ -15,7 +15,10 @@
         <input type="range" class="form-range" min="0" max="5" step="1" id="intelligence" name="intelligence"
                [(ngModel)]="model.intelligence">
       </div>
-      <button type="submit" class="btn btn-success">Search</button>
+      <button type="submit" class="btn btn-success"
+              routerLink="search/?child_friendly={{model.childFriendly}}&&intelligence={{model.intelligence}}">
+        Search
+      </button>
       <!--    <button type="button" class="btn btn-default" (click)="newSearch(); searchForm.reset()">Reset</button>-->
     </form>
   </ul>

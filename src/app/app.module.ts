@@ -14,6 +14,7 @@ import { BreedInfoComponent } from './breed-info/breed-info.component';
 import {FormsModule} from "@angular/forms";
 import { SearchComponent } from './search/search.component';
 import {CommonModule} from "@angular/common";
+import { SearchResultComponent } from './search-result/search-result.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {CommonModule} from "@angular/common";
     BrowseComponent,
     NavigationComponent,
     BreedInfoComponent,
-    SearchComponent
+    SearchComponent,
+    SearchResultComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,12 @@
+
+<div class="card-columns container-auto">
+  <div class="card" *ngFor="let r of result">
+    <div class="card-header"><h3>{{r.name}}</h3></div>
+    <img class="card-img" src="https://cdn2.thecatapi.com/images/{{r.reference_image_id}}.jpg" alt="Cat Image"
+         routerLink="/id/{{r.id}}">
+    <div class="card-body">
+      <p class="card-text">{{r.description}}</p>
+    </div>
+  </div>
+</div>
+
