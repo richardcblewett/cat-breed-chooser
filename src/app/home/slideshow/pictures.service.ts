@@ -10,8 +10,8 @@ export class PicturesService {
   constructor(private http:HttpClient) { }
 
   getAllPictures(){
-    //let allPictures:string = "http://localhost:9092/api/pictures";
-    let allPictures:string = "https://cat-breed-chooser-backend.herokuapp.com/api/pictures";
+    let allPictures:string = "http://localhost:9092/api/pictures";
+    //let allPictures:string = "https://cat-breed-chooser-backend.herokuapp.com/api/pictures";
     return this.http.get(allPictures);
   }
 
