@@ -5,7 +5,7 @@ body {
   margin-left: 2vw;
   margin-right: 2vw;
   justify-content: center;
-
+  font-family: 'Yellowtail', cursive;
 }
 .carousel-indicators, .carousel-control-prev, .carousel-control-next {
   visibility: hidden;
@@ -15,3 +15,4 @@ body {
   border-color: mediumpurple;
   border-width: 5px;
 }
+
