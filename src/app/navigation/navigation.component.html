@@ -1,18 +1,15 @@
-<div class="container">
-  <p>
-    <button type="button" class="btn button-outline-primary" (click)="collapse.toggle()"
-            [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
-      Navigation
-    </button>
-  </p>
-  <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
-    <ul>
-      <li>
-        <a (click)="collapse.toggle()" routerLink='/'>Home</a>
-      </li>
-      <li>
-        <a (click)="collapse.toggle()" routerLink='browse'>Browse</a>
-      </li>
-    </ul>
+<div class="row">
+  <div class="col">
+  </div>
+  <div class="col">
+    <app-browse></app-browse>
+  </div>
+  <div class="col">
+    <button class="btn btn-secondary" type="button" routerLink="">HOME</button>
+  </div>
+  <div class="col">
+    <app-search></app-search>
+  </div>
+  <div class="col">
   </div>
 </div>
