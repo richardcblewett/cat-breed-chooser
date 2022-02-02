@@ -1,13 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   background-color: black;
-  color: white;
+  color: mediumpurple;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  justify-content: center;
+
 }
 .carousel-indicators, .carousel-control-prev, .carousel-control-next {
   visibility: hidden;
 }
 
 .card {
-  border-color: red;
+  border-color: mediumpurple;
   border-width: 5px;
 }
