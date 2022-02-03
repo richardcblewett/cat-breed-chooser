@@ -46,28 +46,27 @@ As I got further into the project I realized that while the original design woul
 I pivoted to a simpler site that has essentially the same layout whether the user is on a traditional computer or a mobile device. <br>
 ## Site Wireframes
 | Original | Final |   
-| --- | --- |   
-| <img src="./planning/CatBreedChooserDesign-ORIGINAL.png" height=300px> | <img src="./planning/CatBreedChooserDesign-MVP.png" height=300px> |   
+| --- | --- |    
+| <img src="./planning/CatBreedChooserDesign-ORIGINAL.png" height=300px> | <img src="./planning/CatBreedChooserDesign-MVP.png" height=300px> |    
 
 ## Bootstrap
 I chose bootstrap as a CSS framework because I am interested in learning more about bootstrap and because it offers some built-in responsiveness. However, I also spiced the project with some vanilla CSS in places where I didn't want to use the default bootstrap options.<br>
 
 ## Searching
 Rather than choose to search cat breeds one parameter at a time, I chose to search using one query that contained all parameters. I did this by using a form to fill out the query information, taking the time to make sure the form populates with data values.
-
 <br><br>
 
 # User Stories
 All user stories assume the user is interested in getting a new cat and wants to do some initial research about the different breeds of cat available. 
 
 ## MVP 
--[x] As a user, I want to be able to browse the different breeds of cat so that I can do some research on breeds I know and find out if they will be a good choice for me.   
--[x] As a user who has children, I want to be able to search for cats that a good with children so I don't have to worry about cats and children not getting along.   
--[x] As a user who values intelligence, I want to be able to search for cat breeds that are at or above a certain intelligence threshold.   
--[x] As a user who likes clean animals, I want to be able to search cat breeds and exclude those breeds who are not up to my standards.
+[x] As a user, I want to be able to browse the different breeds of cat so that I can do some research on breeds I know and find out if they will be a good choice for me.   
+[x] As a user who has children, I want to be able to search for cats that a good with children so I don't have to worry about cats and children not getting along.   
+[x] As a user who values intelligence, I want to be able to search for cat breeds that are at or above a certain intelligence threshold.   
+[x] As a user who likes clean animals, I want to be able to search cat breeds and exclude those breeds who are not up to my standards.
 
 ## Future Goals
-- As a user, I want to be able to search for more cat breed characteristics. (Characteristics such as: )   
+- As a user, I want to be able to search for more cat breed characteristics.     
         - _The backend database has more data that could be accessed - it is a matter of finding the time to expand the frontend query form and update the backend to return more data._   
         - _There is always the option to return more data from the backend by default, but sending an entire database the frontend on a query defeats the purpose of having a backend._
 - As a user, I want to be able to login to the site and keep track of the different cat breeds in which I am interested.   
