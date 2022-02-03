@@ -1,2 +1,6 @@
-# cat-breed-chooser
-Allows a user to search for cat breeds with certain characteristics. 
+# Cat Breed Chooser
+As the COVID-19 pandemic drags on and on, the familiar surroundings of home and hearth become - well - *_too_* familiar. After being trapped inside and not able to socialize because heath is valuable, a person must adjust the familiar and implement new socialization strategies. The acquisition of a new pet is a necessity. And that new pet should be a cat.<br>
+
+The pet options really boil down to choosing either a cat or a dog. A dog might be tempting, but dogs require outdoor exercise. Going outdoors means exposing your precious health to the disease-ridden, unwashed masses of unknown vaccination status. Cats do not require outdoor exercise and therefore do not require you to put your health at risk on a daily basis. Both a cat and a dog will provide a welcome change the familiar, but only a cat will allow you to stay safe and healthy inside your dwelling.<br>
+
+The purpose of this app is to assist people with deciding which breed of cat would work best for them.
