@@ -14,10 +14,13 @@ import {SearchServiceService} from "../search-result/search-service.service";
 export class SearchComponent implements OnInit {
 
   result: any;
-  model = new Search(0, 0);
+  model = new Search(1, 1, 1);
   count: number = 0;
   submitted:boolean = false;
 
+  absolute(number:number){
+    return Math.abs(number);
+  }
 
   resetSubmit() {
     this.submitted = false;
