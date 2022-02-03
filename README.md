@@ -1,3 +1,18 @@
+- [Cat Breed Chooser](#cat-breed-chooser)
+- [Installation Instructions](#installation-instructions)
+  * [Dependencies](#dependencies)
+  * [Run the Project](#run-the-project)
+- [Technologies Used](#technologies-used)
+- [Design](#design)
+  * [Site Wireframes](#site-wireframes)
+  * [Bootstrap](#bootstrap)
+  * [Searching](#searching)
+- [User Stories](#user-stories)
+  * [MVP](#mvp)
+  * [Future Goals](#future-goals)
+- [Hurdles Overcome](#hurdles-overcome)
+- [Unresolved Issues](#unresolved-issues)
+
 # Cat Breed Chooser
 
 ![Cat Breed Chooser](./planning/CatBreedChooserSite.png)
@@ -10,7 +25,7 @@ The purpose of this project is to assist people with deciding which breed of cat
 <br><br>
 
 # Installation Instructions
-If you would like install this project on your computer rather than use the online version hosted at https://cat-breed-chooser.herokuapp.com, you may clone this repository to your computer. (Also fee free to checkout the backend repository at https://github.com/richardcblewett/cat-breed-chooser-backend)<br>
+If you would like install this project on your computer rather than use the online version hosted at https://cat-breed-chooser.herokuapp.com, you may clone this repository to your computer. (Also fee free to check out the backend repository at https://github.com/richardcblewett/cat-breed-chooser-backend)<br>
 
 After cloning the repository, make sure you have the dependencies installed before following the instructions on how to run the project. 
 
