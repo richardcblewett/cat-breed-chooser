@@ -1,6 +1,9 @@
-.btn-success {
+.submit {
   margin-left: 35px;
 }
 .form-group {
   justify-items: center;
+}
+.btn {
+  color : black;
 }

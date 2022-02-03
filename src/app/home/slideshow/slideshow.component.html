@@ -2,7 +2,7 @@
 <ngb-carousel *ngIf="images" class="fixed-bottom">
   <ng-template ngbSlide *ngFor="let i of images">
     <div class="carousel slide justify-content-center row" data-ride="carousel">
-      <img [src]="i" [alt]="i">
+      <img src="https://cdn2.thecatapi.com/images/{{i[0]}}.jpg" alt="Cat Image" routerLink="/id/{{i[1]}}">
     </div>
     <!--    no captions necessary-->
     <div class="carousel-caption"></div>

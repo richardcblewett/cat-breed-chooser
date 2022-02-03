@@ -1,25 +1,25 @@
 <div ngbDropdown class="dropdown">
-  <button ngbDropdownToggle class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
-          data-bs-toggle="dropdown" aria-expanded="true">
+  <button ngbDropdownToggle class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton2"
+          data-bs-toggle="dropdown" aria-expanded="true" (click)="resetSubmit()" >
     Search Breeds
   </button>
-  <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <form (ngSubmit)="onSubmit()" #searchForm="ngForm">
-      <div class="form-group">
-        <label for="childFriendly" class="form-label">Child Friendly</label>
-        <input type="range" class="form-range" min="0" max="5" step="1" id="childFriendly" name="childFriendly"
-               [(ngModel)]="model.childFriendly">
-      </div>
-      <div class="form-group">
-        <label for="intelligence" class="form-label">Intelligence</label>
-        <input type="range" class="form-range" min="0" max="5" step="1" id="intelligence" name="intelligence"
-               [(ngModel)]="model.intelligence">
-      </div>
-      <button type="submit" class="btn btn-success"
-              routerLink="search/?child_friendly={{model.childFriendly}}&&intelligence={{model.intelligence}}">
-        Search
-      </button>
-      <!--    <button type="button" class="btn btn-default" (click)="newSearch(); searchForm.reset()">Reset</button>-->
-    </form>
-  </ul>
-</div>
+  <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenuButton2" [hidden]="submitted">
+      <form (ngSubmit)="onSubmit()" #searchForm="ngForm" >
+        <div class="form-group">
+          <label for="childFriendly" class="form-label">Child Friendly</label>
+          <input type="range" class="form-range" min="0" max="5" step="1" id="childFriendly" name="childFriendly"
+                 [(ngModel)]="model.childFriendly">
+        </div>
+        <div class="form-group">
+          <label for="intelligence" class="form-label">Intelligence</label>
+          <input type="range" class="form-range" min="0" max="5" step="1" id="intelligence" name="intelligence"
+                 [(ngModel)]="model.intelligence">
+        </div>
+        <button type="submit" class="btn btn-info submit"
+                routerLink="search/?child_friendly={{model.childFriendly}}&&intelligence={{model.intelligence}}">
+          Search
+        </button>
+      </form>
+    </ul>
+  </div>
+
