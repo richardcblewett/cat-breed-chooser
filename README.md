@@ -3,4 +3,4 @@ As the COVID-19 pandemic drags on and on, the familiar surroundings of home and 
 
 The pet options really boil down to choosing either a cat or a dog. A dog might be tempting, but dogs require outdoor exercise. Going outdoors means exposing your precious health to the disease-ridden, unwashed masses of unknown vaccination status. Cats do not require outdoor exercise and therefore do not require you to put your health at risk on a daily basis. Both a cat and a dog will provide a welcome change the familiar, but only a cat will allow you to stay safe and healthy inside your dwelling.<br>
 
-The purpose of this app is to assist people with deciding which breed of cat would work best for them.
+The purpose of this project is to assist people with deciding which breed of cat would work best for them.
