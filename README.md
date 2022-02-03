@@ -86,5 +86,7 @@ All user stories assume the user is interested in getting a new cat and wants to
 <br><br>
 
 # Unresolved Issues
-
+1. When clicking the "search" button and submitting a query, the query form gets hidden. But in order to show the form again there either needs to be another click on the page before clicking the "search breeds" button again or the user needs to click the "search breeds" button twice in order to see the form again.
+1. More of an annoyance, but I would also like to be able to do some styling on the dropdown "search breeds" form... and so far I have been unable to find out how to do that. I feel I have complete control over everything on the webpage, and in this case I have not yet found a way to do so. 
+1. The code assumes there will be at least one search result returned by the search query - and that has been the case so far. But the website should be able to handle gracefully those cases in which no result is returned.
 <br><br>
