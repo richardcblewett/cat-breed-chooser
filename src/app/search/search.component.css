@@ -3,7 +3,12 @@
 }
 .form-group {
   justify-items: center;
+  color: mediumpurple;
 }
 .btn {
   color : black;
+}
+.dropdown-menu {
+  border-width: 5px;
+  border-color: black;
 }
