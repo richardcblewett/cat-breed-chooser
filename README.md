@@ -67,12 +67,16 @@ All user stories assume the user is interested in getting a new cat and wants to
 -[x] As a user who likes clean animals, I want to be able to search cat breeds and exclude those breeds who are not up to my standards.
 
 ## Future Goals
-- As a user, I want to be able to search for more cat breed characteristics.   
-        - _The backend database has more data that could be accessed - it is just a matter of finding the time to expand the frontend query form and update the backend to return more data._   
-        - _There is always the option to return more data by default, but sending an entire database the frontend on a query defeats the purpose of having a backend._
+- As a user, I want to be able to search for more cat breed characteristics. (Characteristics such as: )   
+        - _The backend database has more data that could be accessed - it is a matter of finding the time to expand the frontend query form and update the backend to return more data._   
+        - _There is always the option to return more data from the backend by default, but sending an entire database the frontend on a query defeats the purpose of having a backend._
 - As a user, I want to be able to login to the site and keep track of the different cat breeds in which I am interested.   
-        - _Most of the backend code to allow this is already in place, but needs to be implemented._
-        - _In order to correctly implement user accounts, I would want to use available authentication services such as Google Authenticator and other similar tools._
+        - _Most of the backend code to allow this is already in place, but needs to be implemented._  
+        - _In order to correctly implement user accounts, I would want to use available authentication services such as Google Authenticator and other similar tools. I'd rather not track individual users personal information_    
+- As a user, I want to be able to search in my local area for specific breeds of cat that are available to adopt.   
+        - _Once user information is incorporated, this options may become a possibility. But it would be a ways down the road._    
+- As a user, I want to receive alerts when a cat of a specific breed is available to adopt in my area.   
+        - _Again, this would depend on having user and location area available. May be the equivalent of a pipe dream_
 
 <br><br>
 
