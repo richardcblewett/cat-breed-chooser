@@ -1,6 +1,8 @@
 
 ![Cat Breed Chooser](./planning/CatBreedChooserSite.png)
 
+
+TABLE OF CONTENTS
 - [Cat Breed Chooser](#cat-breed-chooser)
 - [Installation Instructions](#installation-instructions)
   * [Dependencies](#dependencies)
@@ -22,11 +24,11 @@ As the COVID-19 pandemic drags on and on, the familiar surroundings of home and 
 
 The pet options really boil down to choosing either a cat or a dog. A dog might be tempting, but dogs require outdoor exercise. Going outdoors means exposing your precious health to the disease-ridden, unwashed masses of unknown vaccination status. Cats do not require outdoor exercise and therefore do not require you to put your health at risk on a daily basis. Both a cat and a dog will provide a welcome change from the monotonously familiar, but only a cat will allow you to stay safe and healthy inside your dwelling.<br>
 
-The purpose of this project is to assist people with deciding which breed of cat would be best for them.
+The purpose of this project is to assist people with deciding which breed of cat would be best.
 <br><br>
 
 # Installation Instructions
-If you would like install this project on your computer rather than use the online version hosted at https://cat-breed-chooser.herokuapp.com, you may clone this repository to your computer. (Also fee free to check out the backend repository at https://github.com/richardcblewett/cat-breed-chooser-backend)<br>
+If you would like install this project on your computer rather than use the online version hosted at https://cat-breed-chooser.herokuapp.com, you may clone this repository to your computer. (Also feel free to check out the backend repository at https://github.com/richardcblewett/cat-breed-chooser-backend)<br>
 
 After cloning the repository, make sure you have the dependencies installed before following the instructions on how to run the project. 
 
@@ -69,11 +71,11 @@ I pivoted to a simpler site that has essentially the same layout whether the use
 I chose bootstrap as a CSS framework because I am interested in learning more about bootstrap and because it offers some built-in responsiveness. However, I also spiced the project with some vanilla CSS in places where I didn't want to use the default bootstrap options.<br>
 
 ## Searching
-Rather than choose to search cat breeds one parameter at a time, I chose to search using one query that contained all parameters. I did this by using a form to fill out the query information, taking the time to make sure the form populates with data values.
+Rather than choose to search cat breeds one parameter at a time, I chose to search using one query that contained all parameters. I did this by using a form to fill out the query information, taking the time to make sure the form populates with valid data values.
 <br><br>
 
 # User Stories
-All user stories assume the user is interested in getting a new cat and wants to do some initial research about the different breeds of cat available. 
+All user stories assume the user is interested in getting a new cat and wants to do some initial research about the different cat breeds available. 
 
 ## MVP 
 [x] As a user, I want to be able to browse the different breeds of cat so that I can do some research on breeds I know and find out if they will be a good choice for me.   
