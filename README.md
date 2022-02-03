@@ -1,3 +1,5 @@
+# Cat Breed Chooser
+
 - [Cat Breed Chooser](#cat-breed-chooser)
 - [Installation Instructions](#installation-instructions)
   * [Dependencies](#dependencies)
@@ -13,7 +15,6 @@
 - [Hurdles Overcome](#hurdles-overcome)
 - [Unresolved Issues](#unresolved-issues)
 
-# Cat Breed Chooser
 
 ![Cat Breed Chooser](./planning/CatBreedChooserSite.png)
 
