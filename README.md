@@ -52,4 +52,15 @@ I chose bootstrap as a CSS framework because I am interested in learning more ab
 | <img src="./planning/CatBreedChooserDesign-ORIGINAL.png" height=300px> | <img src="./planning/CatBreedChooserDesign-MVP.png" height=300px> |   
 <br><br>
 
+# User Stories
 
+<br><br>
+
+
+# Hurdles Overcome
+
+<br><br>
+
+# Unresolved Issues
+
+<br><br>
