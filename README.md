@@ -10,7 +10,7 @@ The purpose of this project is to assist people with deciding which breed of cat
 <br><br>
 
 # Installation Instructions
-If you would like install this project on your computer rather than use the online version hosted at https://cat-breed-chooser.herokuapp.com, you may clone this repository to your computer.<br>
+If you would like install this project on your computer rather than use the online version hosted at https://cat-breed-chooser.herokuapp.com, you may clone this repository to your computer. (Also fee free to checkout the backend repository at https://github.com/richardcblewett/cat-breed-chooser-backend)<br>
 
 After cloning the repository, make sure you have the dependencies installed before following the instructions on how to run the project. 
 
@@ -82,7 +82,23 @@ All user stories assume the user is interested in getting a new cat and wants to
 
 
 # Hurdles Overcome
+1. As mentioned previously, the initial site design wasn't clean enough for my taste so I had to rearrange how things were displayed on the website.
+1. I was not very familiar with bootstrap before I began this project. I was able to pick it up and understand what bootstrap is doing. I still have more to learn, but I feel I overcome my lack of familiarity with the framework.
+1. I initially had an issue with receiving data when hitting endpoints. The issue turned out to be using two ".subscribe" methods in the same code. A resolution was achieved by making sure only one subscribe was called in the same method. If another subscribe was needed, the second one should be called in a separate method.    
+    An quick example of code I was attempting to use one time is here:   
 
+    ```
+    ngOnInit(): void {
+        this.searchPictures
+        .subscribe( () => {
+            this.picturesService.getAllPictures()
+            .subscribe( response => {
+                this.imageInput = response;
+                console.log(this.imageInput[0])
+            })
+        })
+    }
+    ``` 
 <br><br>
 
 # Unresolved Issues
