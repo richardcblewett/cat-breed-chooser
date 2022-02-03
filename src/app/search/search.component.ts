@@ -14,7 +14,7 @@ import {SearchServiceService} from "../search-result/search-service.service";
 export class SearchComponent implements OnInit {
 
   result: any;
-  model = new Search(1, 1, 1);
+  model = new Search(1, 1, -5);
   count: number = 0;
   submitted:boolean = false;
 
