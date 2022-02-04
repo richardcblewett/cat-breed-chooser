@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {DataBreedsService} from "./data-breeds.service";
 import {Subject} from "rxjs";
 
@@ -10,13 +10,14 @@ import {Subject} from "rxjs";
 export class BrowseComponent implements OnInit {
 
   searchNames = new Subject();
-  names:any;
+  names: any;
 
-  constructor(private dataBreedsService:DataBreedsService) { }
+  constructor(private dataBreedsService: DataBreedsService) {
+  }
 
   ngOnInit(): void {
     this.dataBreedsService.getAllBreedsNames()
-      .subscribe(response =>{
+      .subscribe(response => {
         this.names = response;
       })
   }

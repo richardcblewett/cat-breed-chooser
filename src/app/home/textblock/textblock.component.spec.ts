@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { TextblockComponent } from './textblock.component';
+import {TextblockComponent} from './textblock.component';
 
 describe('TextblockComponent', () => {
   let component: TextblockComponent;
@@ -8,9 +8,9 @@ describe('TextblockComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TextblockComponent ]
+      declarations: [TextblockComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

@@ -1,9 +1,8 @@
-
 <div class="card-columns container-auto">
-  <div class="card" *ngFor="let r of result">
+  <div *ngFor="let r of result" class="card">
     <div class="card-header"><h3>{{r.name}}</h3></div>
-    <img class="card-img" src="https://cdn2.thecatapi.com/images/{{r.reference_image_id}}.jpg" alt="Cat Image"
-         routerLink="/id/{{r.id}}">
+    <img alt="Cat Image" class="card-img" routerLink="/id/{{r.id}}"
+         src="https://cdn2.thecatapi.com/images/{{r.reference_image_id}}.jpg">
     <div class="card-body">
       <p class="card-text">{{r.description}}</p>
     </div>

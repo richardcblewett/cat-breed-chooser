@@ -1,34 +1,40 @@
 img {
   height: 50vh;
 }
-.carousel{
+
+.carousel {
   z-index: -1;
 }
 
 .fixed-bottom {
   margin-bottom: 10px;
 }
-@media screen and (max-width: 1500px){
+
+@media screen and (max-width: 1500px) {
   img {
     height: 45vh;
   }
 }
-@media screen and (max-width: 1200px){
+
+@media screen and (max-width: 1200px) {
   img {
     height: 40vh;
   }
 }
-@media screen and (max-width: 1050px){
+
+@media screen and (max-width: 1050px) {
   img {
     height: 35vh;
   }
 }
-@media screen and (max-width: 900px){
+
+@media screen and (max-width: 900px) {
   img {
     height: 30vh;
   }
 }
-@media screen and (max-width: 600px){
+
+@media screen and (max-width: 600px) {
   img {
     height: 20vh;
   }

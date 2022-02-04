@@ -1,13 +1,16 @@
 .submit {
   margin-left: 35px;
 }
+
 .form-group {
   justify-items: center;
   color: mediumpurple;
 }
+
 .btn {
-  color : black;
+  color: black;
 }
+
 .dropdown-menu {
   border-width: 5px;
   border-color: black;

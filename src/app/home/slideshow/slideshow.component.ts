@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {PicturesService} from './pictures.service';
-import {debounceTime, distinctUntilChanged, Subject} from "rxjs";
+import {Subject} from "rxjs";
 
 
 @Component({
@@ -11,14 +11,15 @@ import {debounceTime, distinctUntilChanged, Subject} from "rxjs";
 export class SlideshowComponent implements OnInit {
 
   searchPictures = new Subject();
-  images:any ;
+  images: any;
 
   constructor(private picturesService: PicturesService) {
   }
+
   ngOnInit(): void {
     this.picturesService.getAllPictures()
-          .subscribe(response => {
-            this.images = response;
-          })
-      }
+      .subscribe(response => {
+        this.images = response;
+      })
+  }
 }

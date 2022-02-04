@@ -14,14 +14,10 @@ export class BreedInfoComponent implements OnInit {
   paramId: string = '';
   loaded: boolean = false;
 
-  private setParamId() {
-
+  constructor(private route: ActivatedRoute, private breedDataService: BreedDataService, private picturesService: PicturesService) {
   }
 
-  constructor(private route: ActivatedRoute, private breedDataService: BreedDataService, private picturesService:PicturesService) {
-  }
-
-  findBreed(param:any) {
+  findBreed(param: any) {
     this.breedDataService.getBreedById(param)
       .subscribe(response => {
         this.breed = response;
@@ -33,5 +29,9 @@ export class BreedInfoComponent implements OnInit {
     this.route.paramMap.subscribe(params => {
       this.findBreed(params.get("id"));
     });
+  }
+
+  private setParamId() {
+
   }
 }

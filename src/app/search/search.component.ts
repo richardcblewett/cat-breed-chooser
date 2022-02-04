@@ -16,9 +16,12 @@ export class SearchComponent implements OnInit {
   result: any;
   model = new Search(1, 1, -5);
   count: number = 0;
-  submitted:boolean = false;
+  submitted: boolean = false;
 
-  absolute(number:number){
+  constructor(private http: HttpClient, private searchService: SearchServiceService) {
+  }
+
+  absolute(number: number) {
     return Math.abs(number);
   }
 
@@ -27,11 +30,8 @@ export class SearchComponent implements OnInit {
   }
 
   onSubmit() {
-    this.submitted= true;
+    this.submitted = true;
   };
-
-  constructor(private http: HttpClient, private searchService: SearchServiceService) {
-  }
 
   ngOnInit(): void {
   }
