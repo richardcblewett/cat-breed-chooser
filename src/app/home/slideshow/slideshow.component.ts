@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {PicturesService} from './pictures.service';
-import {debounceTime, distinctUntilChanged, Subject} from "rxjs";
+import {Subject} from "rxjs";
 
 
 @Component({

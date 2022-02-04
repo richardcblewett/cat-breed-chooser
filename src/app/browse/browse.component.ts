@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {DataBreedsService} from "./data-breeds.service";
 import {Subject} from "rxjs";
 
