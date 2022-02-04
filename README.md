@@ -104,13 +104,13 @@ different cat breeds available.
 
 ## MVP
 
-[x] As a user, I want to be able to browse the different breeds of cat so that I can do some research on breeds I know
+- [x] As a user, I want to be able to browse the different breeds of cat so that I can do some research on breeds I know
 and find out if they will be a good choice for me.   
-[x] As a user who has children, I want to be able to search for cats that a good with children so I don't have to worry
+- [x] As a user who has children, I want to be able to search for cats that a good with children so I don't have to worry
 about cats and children not getting along.   
-[x] As a user who values intelligence, I want to be able to search for cat breeds that are at or above a certain
+- [x] As a user who values intelligence, I want to be able to search for cat breeds that are at or above a certain
 intelligence threshold.   
-[x] As a user who likes clean animals, I want to be able to search cat breeds and exclude those breeds who are not up to
+- [x] As a user who likes clean animals, I want to be able to search cat breeds and exclude those breeds who are not up to
 my standards.
 
 ## Future Goals
