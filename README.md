@@ -116,6 +116,7 @@ my standards.
 ## Future Goals
 
 - As a user, I want to be able to search for more cat breed characteristics.
+  - _To do so, follow the general outline of [this commit](https://github.com/richardcblewett/cat-breed-chooser/commit/f791b1a37f837eea5af5c371e084e1c229e52998?diff=split)._
   - _The backend database has more data that could be accessed - it is a matter of finding the time to expand the
     frontend query form and update the backend to return more data._
   - _There is always the option to return more data from the backend by default, but sending an entire database the
