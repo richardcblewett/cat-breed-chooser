@@ -93,7 +93,7 @@ All user stories assume the user is interested in getting a new cat and wants to
 - As a user, I want to be able to search in my local area for specific breeds of cat that are available to adopt.   
         - _Once user information is incorporated, this options may become a possibility. But it would be a ways down the road._    
 - As a user, I want to receive alerts when a cat of a specific breed is available to adopt in my area.   
-        - _Again, this would depend on having user and location area available. May be the equivalent of a pipe dream_
+        - _Again, this would depend on having user and location area available. Maybe the equivalent of a pipe dream._
 
 <br><br>
 
@@ -104,14 +104,13 @@ All user stories assume the user is interested in getting a new cat and wants to
 1. I initially had an issue with receiving data when hitting endpoints. The issue turned out to be using two ".subscribe" methods in the same code. A resolution was achieved by making sure only one subscribe was called in the same method. If another subscribe was needed, the second one should be called in a separate method.    
     An quick example of code I was attempting to use one time is here:   
 
-    ```
+    ```typescript
     ngOnInit(): void {
         this.searchPictures
         .subscribe( () => {
             this.picturesService.getAllPictures()
             .subscribe( response => {
                 this.imageInput = response;
-                console.log(this.imageInput[0])
             })
         })
     }
