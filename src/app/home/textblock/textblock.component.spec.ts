@@ -8,9 +8,9 @@ describe('TextblockComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TextblockComponent ]
+      declarations: [TextblockComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

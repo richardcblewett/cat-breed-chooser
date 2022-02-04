@@ -40,4 +40,5 @@ import {SearchResultComponent} from './search-result/search-result.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

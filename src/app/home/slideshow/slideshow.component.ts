@@ -11,14 +11,15 @@ import {Subject} from "rxjs";
 export class SlideshowComponent implements OnInit {
 
   searchPictures = new Subject();
-  images:any ;
+  images: any;
 
   constructor(private picturesService: PicturesService) {
   }
+
   ngOnInit(): void {
     this.picturesService.getAllPictures()
-          .subscribe(response => {
-            this.images = response;
-          })
-      }
+      .subscribe(response => {
+        this.images = response;
+      })
+  }
 }

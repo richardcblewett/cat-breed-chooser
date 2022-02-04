@@ -1,9 +1,9 @@
-<div ngbDropdown class="dropdown">
-  <button ngbDropdownToggle class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton1"
-          data-bs-toggle="dropdown" aria-expanded="true">
+<div class="dropdown" ngbDropdown>
+  <button aria-expanded="true" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" id="dropdownMenuButton1"
+          ngbDropdownToggle type="button">
     Browse a Breed
   </button>
-  <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+  <ul aria-labelledby="dropdownMenuButton1" class="dropdown-menu" ngbDropdownMenu>
     <div *ngFor="let n of names">
       <li><a ngbDropdownItem routerLink="/id/{{n[1]}}">{{n[0]}}</a></li>
     </div>

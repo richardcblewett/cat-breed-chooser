@@ -11,10 +11,10 @@ export class SearchResultComponent implements OnInit {
 
   result: any;
 
-  constructor(private searchService: SearchServiceService, private route:ActivatedRoute) {
+  constructor(private searchService: SearchServiceService, private route: ActivatedRoute) {
   }
 
-  findResults(param:any) {
+  findResults(param: any) {
     this.searchService.getSearchResults(param)
       .subscribe(response => {
         this.result = response;
@@ -23,7 +23,7 @@ export class SearchResultComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe(params =>{
+    this.route.paramMap.subscribe(params => {
       this.findResults(params.get("query"));
       console.log(params);
     })
