@@ -2,7 +2,7 @@
   <div *ngFor="let r of result" class="card">
     <div class="card-header"><h3>{{r.name}}</h3></div>
     <img alt="Cat Image" class="card-img" routerLink="/id/{{r.id}}"
-         src="https://cdn2.thecatapi.com/images/{{r.reference_image_id}}.jpg">
+         src="https://cdn2.thecatapi.com/images/{{r.imageId}}.jpg">
     <div class="card-body">
       <p class="card-text">{{r.description}}</p>
     </div>

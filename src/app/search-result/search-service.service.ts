@@ -10,8 +10,8 @@ export class SearchServiceService {
   }
 
   getSearchResults(query: string) {
-    //let search:string = "http://localhost:9092/api/search"+query;
-    let search: string = "https://cat-breed-chooser-backend.herokuapp.com/api/search" + query;
+    let search:string = "http://localhost:9092/api/search"+query;
+    //let search: string = "https://cat-breed-chooser-backend.herokuapp.com/api/search" + query;
     console.log(search);
     return this.http.get(search);
   }
