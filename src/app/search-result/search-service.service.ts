@@ -10,20 +10,10 @@ export class SearchServiceService {
   }
 
   getSearchResults(query: string) {
-    let search:string = "http://localhost:9092/api/search"+query;
-    //let search: string = "https://cat-breed-chooser-backend.herokuapp.com/api/search" + query;
-    console.log(search);
+    //let search:string = "http://localhost:9092/api/search"+query;
+    // console.log(search);
+    let search: string = "https://cat-breed-chooser-backend.herokuapp.com/api/search" + query;
     return this.http.get(search);
   }
 
-  // getSearchResults(childFriendly:number, intelligence:number){
-  //   let search:string = "http://localhost:9092/api/search"
-  //       +"?child_friendly="+childFriendly
-  //       +"&intelligence="+intelligence;
-  //   // let search:string = "https://cat-breed-chooser-backend.herokuapp.com/api/search"
-  //   //   +"?childFriendly="+childFriendly
-  //   //   +"&intelligence="+intelligence;
-  //   console.log(search);
-  //   return this.http.get(search);
-  // }
 }

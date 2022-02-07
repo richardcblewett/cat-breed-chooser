@@ -10,8 +10,8 @@ export class BreedDataService {
   }
 
   getBreedById(id: string) {
-    let breed:string = "http://localhost:9092/api/id?id="+id;
-    //let breed: string = "https://cat-breed-chooser-backend.herokuapp.com/api/id?id=" + id;
+    //let breed:string = "http://localhost:9092/api/id?id="+id;
+    let breed: string = "https://cat-breed-chooser-backend.herokuapp.com/api/id?id=" + id;
     return this.http.get(breed);
   }
 }
