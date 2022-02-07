@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {Search} from './search';
 import {HttpClient} from "@angular/common/http";
 import {SearchServiceService} from "../search-result/search-service.service";
+import {FormClass} from "./formClass"
 
 @Component({
   selector: 'app-search',
@@ -13,16 +13,28 @@ import {SearchServiceService} from "../search-result/search-service.service";
 
 export class SearchComponent implements OnInit {
 
-  result: any;
-  model = new Search(1, 1, -5);
   count: number = 0;
   submitted: boolean = false;
+  result: any;
+
+  //sets the default values for the range forms
+  childFriendly = new FormClass("childFriendly","Child Friendly", 1,1,5 );
+  groomingEffort = new FormClass("grooming", "Grooming Effort", -5,-5,-1);
+  intelligence = new FormClass("intelligence", "Intelligence", 1,1,5);
+  //builds the form options
+  model = [this.childFriendly, this.groomingEffort,this.intelligence];
 
   constructor(private http: HttpClient, private searchService: SearchServiceService) {
   }
 
-  absolute(number: number) {
-    return Math.abs(number);
+  buildQuery(input: FormClass[]):string {
+    //everything after the "?" on the routerlink.
+    let query = "";
+    for (let i = 0; i < input.length; i++){
+      query = `${query}${input[i].name}=${Math.abs(input[i].value)}`
+      if (i < input.length) { query += "&";}
+    }
+    return query;
   }
 
   resetSubmit() {
@@ -31,9 +43,10 @@ export class SearchComponent implements OnInit {
 
   onSubmit() {
     this.submitted = true;
-  };
+  }
 
   ngOnInit(): void {
   }
+
 
 }
