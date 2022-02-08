@@ -7,7 +7,6 @@ import {FormClass} from "./formClass"
   selector: 'app-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css'],
-
 })
 
 
@@ -19,10 +18,14 @@ export class SearchComponent implements OnInit {
 
   //sets the default values for the range forms
   childFriendly = new FormClass("childFriendly","Child Friendly", 1,1,5 );
-  groomingEffort = new FormClass("grooming", "Grooming Effort", -5,-5,-1);
+  grooming = new FormClass("grooming", "Cleanliness", -5,-5,-1);
+  energyLevel = new FormClass("energyLevel", "Energy Level", 1, 1, 5);
   intelligence = new FormClass("intelligence", "Intelligence", 1,1,5);
+  sheddingLevel = new FormClass("sheddingLevel", "Shedding Level", -5, -5,-1);
+  socialNeeds = new FormClass("socialNeeds", "Sociability", 1, 1, 5);
+  vocalisation = new FormClass("vocalisation","Vocalisation", 1, 1, 5);
   //builds the form options
-  model = [this.childFriendly, this.groomingEffort,this.intelligence];
+  model = [this.childFriendly, this.grooming, this.energyLevel, this.intelligence, this.sheddingLevel, this.socialNeeds, this.vocalisation];
 
   constructor(private http: HttpClient, private searchService: SearchServiceService) {
   }
@@ -32,7 +35,7 @@ export class SearchComponent implements OnInit {
     let query = "";
     for (let i = 0; i < input.length; i++){
       query = `${query}${input[i].name}=${Math.abs(input[i].value)}`
-      if (i < input.length) { query += "&";}
+      if (i < input.length-1) { query += "&";}
     }
     return query;
   }
